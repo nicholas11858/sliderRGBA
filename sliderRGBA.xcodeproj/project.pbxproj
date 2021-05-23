@@ -10,9 +10,9 @@
 		959C5F4C265A92A700B0F739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959C5F4B265A92A700B0F739 /* AppDelegate.swift */; };
 		959C5F4E265A92A700B0F739 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959C5F4D265A92A700B0F739 /* SceneDelegate.swift */; };
 		959C5F50265A92A700B0F739 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959C5F4F265A92A700B0F739 /* ViewController.swift */; };
-		959C5F53265A92A700B0F739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959C5F51265A92A700B0F739 /* Main.storyboard */; };
 		959C5F55265A92A900B0F739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959C5F54265A92A900B0F739 /* Assets.xcassets */; };
 		959C5F58265A92A900B0F739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959C5F56265A92A900B0F739 /* LaunchScreen.storyboard */; };
+		959C5F62265A92DD00B0F739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959C5F61265A92DD00B0F739 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		959C5F4B265A92A700B0F739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		959C5F4D265A92A700B0F739 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		959C5F4F265A92A700B0F739 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		959C5F52265A92A700B0F739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		959C5F54265A92A900B0F739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		959C5F57265A92A900B0F739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		959C5F59265A92A900B0F739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		959C5F61265A92DD00B0F739 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 				959C5F4B265A92A700B0F739 /* AppDelegate.swift */,
 				959C5F4D265A92A700B0F739 /* SceneDelegate.swift */,
 				959C5F4F265A92A700B0F739 /* ViewController.swift */,
-				959C5F51265A92A700B0F739 /* Main.storyboard */,
+				959C5F61265A92DD00B0F739 /* Main.storyboard */,
 				959C5F54265A92A900B0F739 /* Assets.xcassets */,
 				959C5F56265A92A900B0F739 /* LaunchScreen.storyboard */,
 				959C5F59265A92A900B0F739 /* Info.plist */,
@@ -124,9 +124,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				959C5F62265A92DD00B0F739 /* Main.storyboard in Resources */,
 				959C5F58265A92A900B0F739 /* LaunchScreen.storyboard in Resources */,
 				959C5F55265A92A900B0F739 /* Assets.xcassets in Resources */,
-				959C5F53265A92A700B0F739 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,14 +146,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		959C5F51265A92A700B0F739 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				959C5F52265A92A700B0F739 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		959C5F56265A92A900B0F739 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +280,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = sliderRGBA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +288,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nikolayosipov.sliderRGBA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,6 +299,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = sliderRGBA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nikolayosipov.sliderRGBA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
