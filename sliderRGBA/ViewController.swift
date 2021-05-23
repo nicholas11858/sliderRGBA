@@ -35,31 +35,49 @@ class ViewController: UIViewController {
         alphaColorSlider.value = 1.0
     }
 
-
     @IBAction func changedRedSliderValue() {
         
         valueRedColor = round(CGFloat(redColorSlider.value) * 100) / 100
         valueRedColorLabel.text = valueRedColor.description
-        colorView.backgroundColor = UIColor.init(red: valueRedColor, green: valueGreenColor, blue: valueBlueColor, alpha: valueAlphaColor)
+        colorView.backgroundColor = UIColor.init(
+            red: valueRedColor,
+            green: valueGreenColor,
+            blue: valueBlueColor,
+            alpha: valueAlphaColor
+        )
     }
     @IBAction func changeGreenSliderValue() {
         
         valueGreenColor = round(CGFloat(greenColorSlider.value) * 100) / 100
         valueGreenColorLabel.text = valueGreenColor.description
-        colorView.backgroundColor = UIColor.init(red: valueRedColor, green: valueGreenColor, blue: valueBlueColor, alpha: valueAlphaColor)
-        
+        colorView.backgroundColor = UIColor.init(
+            red: valueRedColor,
+            green: valueGreenColor,
+            blue: valueBlueColor,
+            alpha: valueAlphaColor
+        )
     }
     @IBAction func changeBlueSliderValue() {
         
         valueBlueColor = round(CGFloat(blueColorSlider.value) * 100) / 100
         valueBlueColorLabel.text = valueBlueColor.description
-        colorView.backgroundColor = UIColor.init(red: valueRedColor, green: valueGreenColor, blue: valueBlueColor, alpha: valueAlphaColor)
+        colorView.backgroundColor = UIColor.init(
+            red: valueRedColor,
+            green: valueGreenColor,
+            blue: valueBlueColor,
+            alpha: valueAlphaColor
+        )
     }
     @IBAction func changeAlphaSliderValue() {
         
         valueAlphaColor = round(CGFloat(alphaColorSlider.value) * 100) / 100
         valueAlphaColorLabel.text = valueAlphaColor.description
-        colorView.backgroundColor = UIColor.init(red: valueRedColor, green: valueGreenColor, blue: valueBlueColor, alpha: valueAlphaColor)
+        colorView.backgroundColor = UIColor.init(
+            red: valueRedColor,
+            green: valueGreenColor,
+            blue: valueBlueColor,
+            alpha: valueAlphaColor
+        )
     }
 }
 
