@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     @IBAction func changeBlueSliderValue() {
         
         valueBlueColor = round(CGFloat(blueColorSlider.value) * 100) / 100
-        valueBlueColorLabel.text = valueGreenColor.description
+        valueBlueColorLabel.text = valueBlueColor.description
         colorView.backgroundColor = UIColor.init(red: valueRedColor, green: valueGreenColor, blue: valueBlueColor, alpha: valueAlphaColor)
     }
     @IBAction func changeAlphaSliderValue() {
