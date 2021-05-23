@@ -88,18 +88,30 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oiE-rF-vao">
                                         <rect key="frame" x="-2" y="0.0" width="199" height="31"/>
                                         <color key="maximumTrackTintColor" systemColor="systemTealColor"/>
+                                        <connections>
+                                            <action selector="changedRedSliderValue" destination="BYZ-38-t0r" eventType="valueChanged" id="Fui-fo-FZU"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ehx-Mu-8Yu">
                                         <rect key="frame" x="-2" y="40" width="199" height="31"/>
                                         <color key="maximumTrackTintColor" systemColor="systemTealColor"/>
+                                        <connections>
+                                            <action selector="changeGreenSliderValue" destination="BYZ-38-t0r" eventType="valueChanged" id="qwe-7c-LAJ"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oSI-ed-0K7">
                                         <rect key="frame" x="-2" y="80" width="199" height="31"/>
                                         <color key="maximumTrackTintColor" systemColor="systemTealColor"/>
+                                        <connections>
+                                            <action selector="changeBlueSliderValue" destination="BYZ-38-t0r" eventType="valueChanged" id="qqq-j0-LfC"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qFL-Ye-HVd">
                                         <rect key="frame" x="-2" y="120" width="199" height="31"/>
                                         <color key="maximumTrackTintColor" systemColor="systemTealColor"/>
+                                        <connections>
+                                            <action selector="changeAlphaSliderValue" destination="BYZ-38-t0r" eventType="valueChanged" id="Tgz-Wg-DVl"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -119,6 +131,17 @@
                             <constraint firstItem="7cr-ZV-jyk" firstAttribute="top" secondItem="5dC-rM-PWT" secondAttribute="bottom" constant="46" id="xkZ-4h-BtG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alphaColorSlider" destination="qFL-Ye-HVd" id="hiL-1q-fIW"/>
+                        <outlet property="blueColorSlider" destination="oSI-ed-0K7" id="ztB-LF-bfY"/>
+                        <outlet property="colorView" destination="5dC-rM-PWT" id="0EV-qZ-zZP"/>
+                        <outlet property="greenColorSlider" destination="ehx-Mu-8Yu" id="JKO-aD-Qee"/>
+                        <outlet property="redColorSlider" destination="oiE-rF-vao" id="oK4-h8-VMY"/>
+                        <outlet property="valueAlphaColorLabel" destination="FYR-bl-rLN" id="Htz-cb-7Lr"/>
+                        <outlet property="valueBlueColorLabel" destination="D0L-8o-IFl" id="7nX-Yx-H01"/>
+                        <outlet property="valueGreenColorLabel" destination="K20-f2-dVU" id="0ch-w2-Hdm"/>
+                        <outlet property="valueRedColorLabel" destination="YbG-Kk-CIq" id="Lb0-L0-hFi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
