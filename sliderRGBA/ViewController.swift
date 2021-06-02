@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var colorView: UIView!
     
     @IBOutlet weak var valueRedColorLabel: UILabel!
@@ -34,50 +34,19 @@ class ViewController: UIViewController {
         blueColorSlider.value = 1.0
         alphaColorSlider.value = 1.0
     }
-
-    @IBAction func changedRedSliderValue() {
+    
+    @IBAction func changeColor(_ sender: UISlider) {
         
-        valueRedColor = round(CGFloat(redColorSlider.value) * 100) / 100
-        valueRedColorLabel.text = valueRedColor.description
         colorView.backgroundColor = UIColor.init(
-            red: valueRedColor,
-            green: valueGreenColor,
-            blue: valueBlueColor,
-            alpha: valueAlphaColor
+            red: CGFloat(redColorSlider.value),
+            green: CGFloat(greenColorSlider.value),
+            blue: CGFloat(blueColorSlider.value),
+            alpha: CGFloat(alphaColorSlider.value)
         )
-    }
-    @IBAction func changeGreenSliderValue() {
         
-        valueGreenColor = round(CGFloat(greenColorSlider.value) * 100) / 100
-        valueGreenColorLabel.text = valueGreenColor.description
-        colorView.backgroundColor = UIColor.init(
-            red: valueRedColor,
-            green: valueGreenColor,
-            blue: valueBlueColor,
-            alpha: valueAlphaColor
-        )
-    }
-    @IBAction func changeBlueSliderValue() {
-        
-        valueBlueColor = round(CGFloat(blueColorSlider.value) * 100) / 100
-        valueBlueColorLabel.text = valueBlueColor.description
-        colorView.backgroundColor = UIColor.init(
-            red: valueRedColor,
-            green: valueGreenColor,
-            blue: valueBlueColor,
-            alpha: valueAlphaColor
-        )
-    }
-    @IBAction func changeAlphaSliderValue() {
-        
-        valueAlphaColor = round(CGFloat(alphaColorSlider.value) * 100) / 100
-        valueAlphaColorLabel.text = valueAlphaColor.description
-        colorView.backgroundColor = UIColor.init(
-            red: valueRedColor,
-            green: valueGreenColor,
-            blue: valueBlueColor,
-            alpha: valueAlphaColor
-        )
-    }
+        valueRedColorLabel.text = String(round(redColorSlider.value * 100) / 100)
+        valueGreenColorLabel.text = String(round(greenColorSlider.value * 100) / 100)
+        valueBlueColorLabel.text = String(round(blueColorSlider.value * 100) / 100)
+        valueAlphaColorLabel.text = String(round(alphaColorSlider.value * 100) / 100)    }
 }
 

@@ -89,28 +89,28 @@
                                         <rect key="frame" x="-2" y="0.0" width="164" height="31"/>
                                         <color key="maximumTrackTintColor" systemColor="systemTealColor"/>
                                         <connections>
-                                            <action selector="changedRedSliderValue" destination="BYZ-38-t0r" eventType="valueChanged" id="Fui-fo-FZU"/>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="Uuz-4N-oBn"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ehx-Mu-8Yu">
                                         <rect key="frame" x="-2" y="40" width="164" height="31"/>
                                         <color key="maximumTrackTintColor" systemColor="systemTealColor"/>
                                         <connections>
-                                            <action selector="changeGreenSliderValue" destination="BYZ-38-t0r" eventType="valueChanged" id="qwe-7c-LAJ"/>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="68v-EG-NmP"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oSI-ed-0K7">
                                         <rect key="frame" x="-2" y="80" width="164" height="31"/>
                                         <color key="maximumTrackTintColor" systemColor="systemTealColor"/>
                                         <connections>
-                                            <action selector="changeBlueSliderValue" destination="BYZ-38-t0r" eventType="valueChanged" id="qqq-j0-LfC"/>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="RUd-7r-e3X"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qFL-Ye-HVd">
                                         <rect key="frame" x="-2" y="120" width="164" height="31"/>
                                         <color key="maximumTrackTintColor" systemColor="systemTealColor"/>
                                         <connections>
-                                            <action selector="changeAlphaSliderValue" destination="BYZ-38-t0r" eventType="valueChanged" id="Tgz-Wg-DVl"/>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="TCF-mw-TYg"/>
                                         </connections>
                                     </slider>
                                 </subviews>
